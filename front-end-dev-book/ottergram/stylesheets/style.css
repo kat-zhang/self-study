@@ -1,29 +1,61 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-seriw */
     font-size: 10px;
     background: rgb(149,194,215);
 }
+
 a {
     text-decoration: none;
+}
+
+.logo-text {
+    background: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bungee', cursive;
+    font-size: 37px;
 }
 
 .thumbnail-item {
     display: block;
     border: 1px solid rgb(100%, 100%, 100%);
-    border: 1px solid rgba(100%, 100%, 100%, .08);
+    border: 1px solid rgba(100%, 100%, 100%, .08);   
 }
+
+#barry{
+    background: green;
+}
+#robin {
+    background: blue;
+}
+#maurice {
+    background: darkorchid
+}
+#lesley {
+    background: red;
+}
+#barbara {
+    background: orange
+}
+
+/* adds margin-top to every .thumbnail-item but the first */
+.thumbnail-item + .thumbnail-item {
+    margin-top: 10px;
+}
+
 .thumbnail-list {
     list-style: none;
+    padding: 0px;
 }
+
 .thumbnail-image {
     width: 100%;
     display: block;
 
 }
 
-
-.thumbnail-title{
+.thumbnail-title {
     background: rgb(96,125,139);
     color: rgb(202, 238, 255);
     display: block;
@@ -32,4 +64,7 @@ a {
     font-size: 18px;
 }
 
-;
+.detail-image {
+    width: 90%;
+}
+
