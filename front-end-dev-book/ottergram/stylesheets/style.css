@@ -20,20 +20,53 @@ a {
     font-size: 37px;
 }
 
+.main-header {
+    flex: 0 1 auto;
+
+}
+/* adds margin-top to every .thumbnail-item but the first */
+/* .thumbnail-item + .thumbnail-item {
+    margin-top: 10px;
+} */
+
+/* .thumbnail-item{
+    margin-top: 10px;
+} */
 .thumbnail-item {
+    background: blue;
     display: inline-block;
-    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, .08);   
 }
 
-/* adds margin-top to every .thumbnail-item but the first */
-.thumbnail-item + .thumbnail-item {
-    margin-top: 10px;
+
+
+.thumbnail-list {
+    flex: 0 1 auto;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
+li {
+    background: red;
+}
+
+
+
+.main-content {
+    flex: 1 1 auto;
+}
+
+
 #barry{
-    background:green;
+    background:darkgreen;
 }
 #robin {
     background: blue;
@@ -49,12 +82,7 @@ a {
 }
 
 
-.thumbnail-list {
-    list-style: none;
-    padding: 0px;
-    white-space: nowrap;
-    overflow-x: auto;
-}
+
 
 .thumbnail-image {
     width: 100%;
@@ -63,6 +91,7 @@ a {
 }
 
 .thumbnail-title {
+    
     background: rgb(96,125,139);
     color: rgb(202, 238, 255);
     display: block;
@@ -71,7 +100,11 @@ a {
     font-size: 18px;
 }
 
+.detail-image-container {
+    flex: 1 1 auto;
+}
 .detail-image {
     width: 90%
 }
+
 
