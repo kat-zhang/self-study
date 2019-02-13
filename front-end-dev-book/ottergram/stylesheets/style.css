@@ -18,9 +18,15 @@ a {
 }
 
 .thumbnail-item {
-    display: block;
+    display: inline-block;
+    width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, .08);   
+}
+
+/* adds margin-top to every .thumbnail-item but the first */
+.thumbnail-item + .thumbnail-item {
+    margin-top: 10px;
 }
 
 #barry{
@@ -39,10 +45,6 @@ a {
     background: orange
 }
 
-/* adds margin-top to every .thumbnail-item but the first */
-.thumbnail-item + .thumbnail-item {
-    margin-top: 10px;
-}
 
 .thumbnail-list {
     list-style: none;
@@ -65,6 +67,6 @@ a {
 }
 
 .detail-image {
-    width: 90%;
+    width: 90%
 }
 
