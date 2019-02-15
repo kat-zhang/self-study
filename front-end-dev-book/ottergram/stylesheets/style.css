@@ -1,6 +1,7 @@
 html, body {
-    width: 100%
+    height: 100%;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,18 +23,23 @@ a {
 
 .main-header {
     flex: 0 1 auto;
-
 }
-/* adds margin-top to every .thumbnail-item but the first */
-/* .thumbnail-item + .thumbnail-item {
-    margin-top: 10px;
-} */
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
 
-/* .thumbnail-item{
-    margin-top: 10px;
-} */
+.thumbnail-title {
+    background: rgb(96,125,139);
+    color: rgb(202, 238, 255);
+    display: block;
+    margin: 0px;
+    padding: 4px 10px;
+    font-size: 18px;
+}
+
 .thumbnail-item {
-    background: blue;
     display: inline-block;
     min-width: 120px;
     max-width: 120px;
@@ -41,28 +47,23 @@ a {
     border: 1px solid rgba(100%, 100%, 100%, .08);   
 }
 
-
-
 .thumbnail-list {
     flex: 0 1 auto;
     order: 2;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     white-space: nowrap;
     overflow-x: auto;
+  }
+
+
+.thumbnail-image {
+    width: 100%;
+    display: block;
 }
 
-li {
-    background: red;
-}
-
-
-
-.main-content {
-    flex: 1 1 auto;
-}
 
 
 #barry{
@@ -83,28 +84,33 @@ li {
 
 
 
-
-.thumbnail-image {
-    width: 100%;
-    display: block;
-
-}
-
-.thumbnail-title {
-    
-    background: rgb(96,125,139);
-    color: rgb(202, 238, 255);
-    display: block;
-    margin: 0px;
-    padding: 4px 10px;
-    font-size: 18px;
-}
-
 .detail-image-container {
     flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .detail-image {
     width: 90%
 }
+
+.detail-image-frame {
+    position: relative;
+    text-align: center;
+    
+}
+
+.detail-image-title {
+    position: absolute;
+    bottom: -16px;
+    left: 4px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: rgba(0,0,0,0.9) 1px 2px 9px;
+}
+
+
 
 
