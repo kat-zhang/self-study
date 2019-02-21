@@ -1,6 +1,7 @@
-var imageSelector =  "[data-role='target']";
-var titleSelector = "[data-role='title']";
-var linkSelector = "[data-role='trigger']";
+// Constants that point to the main image
+const imageSelector =  "[data-role='target']";
+const titleSelector = "[data-role='title']";
+const linkSelector = "[data-role='trigger']";
 
 function setDetails(imageUrl, titleText) {
     // Change the detail image
